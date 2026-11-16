@@ -1,0 +1,160 @@
+==============================================================================
+IMAGE TAMPERING SCREENING REPORT
+==============================================================================
+Generated : 2026-11-16 16:54:27
+Images    : 4
+ELA setup : JPEG quality 90, amplification k = 15
+
+------------------------------------------------------------------------------
+FILE: original_phone.jpg
+------------------------------------------------------------------------------
+[File information]
+  Format / mode : JPEG / RGB
+  Dimensions    : 1932 x 2576
+  File size     : 577,933 bytes
+  SHA-256       : b74ac6911cbe40d0ce240649b937871dc64ed1561b11c17b1084d2bf18eb5af4
+  MD5 / SHA-1   : 859f56cd2d62ad6ebc506bbdb42594a2 / b424ead9db91d9ccbfc4721317d3f18e34ad9243
+  Integrity     : NO REFERENCE SUPPLIED
+
+[EXIF metadata]
+  No EXIF metadata found
+
+[Error Level Analysis]
+  Mean error level          : 6.86
+  Maximum error level       : 285.00
+  High-error pixel ratio    : 0.0005
+  Largest outlier-error block cluster : 0.0% of image blocks
+  ELA flag                  : no
+  ELA image                 : original_phone_ela.png
+
+[RGB channel statistics]
+  Mean (R,G,B) : 179.2, 177.3, 174.0
+  Std  (R,G,B) : 35.0, 37.7, 36.0
+  Anomalous blocks : 228 / 4800 (4.8%)
+
+[Metadata flags]
+  - No EXIF metadata on a JPEG treated as a camera photograph
+
+[Suspicion score]
+  +10  Missing EXIF on a claimed camera photo
+  TOTAL: 10 / 100  ->  Low - no strong indicators
+
+------------------------------------------------------------------------------
+FILE: original_phone_lossless.png
+------------------------------------------------------------------------------
+[File information]
+  Format / mode : PNG / RGB
+  Dimensions    : 1932 x 2576
+  File size     : 3,730,830 bytes
+  SHA-256       : d83efd327fa75e2589f2f66d8a197470fcbdd2b3e4bdd04de3228fd4fc2fcc1d
+  MD5 / SHA-1   : 99406ce2d396335fba63e49f9843a50d / 440ec9970fffc3826c020c883288ede09d2c665e
+  Integrity     : NO REFERENCE SUPPLIED
+
+[EXIF metadata]
+  No EXIF metadata found
+
+[Error Level Analysis]
+  Mean error level          : 6.86
+  Maximum error level       : 285.00
+  High-error pixel ratio    : 0.0005
+  Largest outlier-error block cluster : 0.0% of image blocks
+  ELA flag                  : no
+  ELA image                 : original_phone_lossless_ela.png
+
+[RGB channel statistics]
+  Mean (R,G,B) : 179.2, 177.3, 174.0
+  Std  (R,G,B) : 35.0, 37.7, 36.0
+  Anomalous blocks : 228 / 4800 (4.8%)
+
+[Metadata flags]
+  None
+
+[Suspicion score]
+  (no indicators triggered)
+  TOTAL: 0 / 100  ->  Low - no strong indicators
+  Note: Format is PNG, not JPEG: ELA is unreliable and was not scored.
+
+------------------------------------------------------------------------------
+FILE: tampered_no_exif.jpg
+------------------------------------------------------------------------------
+[File information]
+  Format / mode : JPEG / RGB
+  Dimensions    : 1932 x 2576
+  File size     : 1,000,922 bytes
+  SHA-256       : ecb8566b8de4c75bbb8e08966734d85aecf41f042ab65e8a67875d096ae0b10d
+  MD5 / SHA-1   : 3cf987bfcf0435cac97a16e5f270b32b / cb91f21d04ca239cc5c45a2e2d4132fd0efc2643
+  Integrity     : NO REFERENCE SUPPLIED
+
+[EXIF metadata]
+  No EXIF metadata found
+
+[Error Level Analysis]
+  Mean error level          : 7.09
+  Maximum error level       : 330.00
+  High-error pixel ratio    : 0.0011
+  Largest outlier-error block cluster : 0.3% of image blocks
+  ELA flag                  : YES
+  ELA image                 : tampered_no_exif_ela.png
+
+[RGB channel statistics]
+  Mean (R,G,B) : 177.6, 175.6, 172.5
+  Std  (R,G,B) : 37.2, 40.2, 38.2
+  Anomalous blocks : 298 / 4800 (6.2%)
+
+[Metadata flags]
+  - No EXIF metadata on a JPEG treated as a camera photograph
+
+[Suspicion score]
+  +40  High ELA mean or large high-error region
+  +10  Missing EXIF on a claimed camera photo
+  TOTAL: 50 / 100  ->  Medium - manual review suggested
+
+------------------------------------------------------------------------------
+FILE: tampered_splice.jpg
+------------------------------------------------------------------------------
+[File information]
+  Format / mode : JPEG / RGB
+  Dimensions    : 1932 x 2576
+  File size     : 1,001,254 bytes
+  SHA-256       : 1be1836e0c1176900d05695c352fb9a9f919405bfb98b6e8ac419731e980d94c
+  MD5 / SHA-1   : 9f356ba84005e93702431550ffb424aa / 4ace71d1479973e02763be97ab41be04a9f6618d
+  Integrity     : NO REFERENCE SUPPLIED
+
+[EXIF metadata]
+  Make             : Not available
+  Model            : Not available
+  Software         : Adobe Photoshop 25.0
+  DateTimeOriginal : Not available
+  DateTime         : 2026:11:16 18:40:11
+
+[Error Level Analysis]
+  Mean error level          : 7.10
+  Maximum error level       : 330.00
+  High-error pixel ratio    : 0.0011
+  Largest outlier-error block cluster : 0.3% of image blocks
+  ELA flag                  : YES
+  ELA image                 : tampered_splice_ela.png
+
+[RGB channel statistics]
+  Mean (R,G,B) : 177.6, 175.6, 172.5
+  Std  (R,G,B) : 37.2, 40.2, 38.2
+  Anomalous blocks : 296 / 4800 (6.2%)
+
+[Metadata flags]
+  - Software tag names an image editor: 'Adobe Photoshop 25.0'
+
+[Suspicion score]
+  +40  High ELA mean or large high-error region
+  +20  Editing-software tag present
+  TOTAL: 60 / 100  ->  High - detailed expert examination needed
+
+==============================================================================
+BATCH SUMMARY
+==============================================================================
+  Total images processed : 4  (unreadable: 0)
+  Rated Low              : 2
+  Rated Medium           : 1
+  Rated High             : 1
+  Reference-hash mismatches : 0
+
+CAVEAT: These results are screening indicators, not proof. Resaving, resizing and social-media compression can create misleading ELA patterns; metadata can be edited or stripped; a hash only proves integrity when compared with a trusted earlier value. Interpret findings together with acquisition context and other evidence.
